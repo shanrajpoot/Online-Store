@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Header */
+header{
+    background: #272727;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header a{
+    color: white;
+}
+
+#logo{
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+}
+
+#menu li{
+    padding: 10px;
+}
+
+#links li{
+    padding: 10px;
+}
+
+.btn3{
+    margin-right: 20px;
+    padding: 10px;
+    border: transparent;
+    border-radius: 5px;
+    color: white;
+    background: #007BFF;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: flex;
+}
+
+.btn4{
+    margin-right: 30px;
+    padding: 10px;
+    border: transparent;
+    border-radius: 5px;
+    color: white;
+    background: #007BFF;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: flex;
+}
+
+article{
+    padding: 10px;
+}
+
+.offer{
+    background: gray;
+}
+
+.offer h2{
+    padding: 10px 0 0 50px;
+    color: white;
+}
+
+.offer p{
+    padding: 0 0 10px 50px;
+    color: white;
+}
+
+
+/* content */
+#content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* filter: blur(2px); */
+}
+
+
+/* Services */
+#services{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-box{
+    padding: 10px;
+    flex-basis: 32%;
+    max-width: 370px;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.service-box img{
+    width: 100%;
+}
+
+.service-box h3{
+    margin: 5px 0 10px;
+}
+
+.service-box p{
+    margin: 0 0 10px;
+}
+
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.call-to-action a{
+    color: white;
+    background: gray;
+    padding: 8px 13px;
+    display: block;
+    border: 2px solid transparent;
+}
+
+.call-to-action a:hover{
+    color: gray;
+    background: transparent;
+    border: 2px solid gray;
+}
+
+
+/* Purchase-Form */
+.body{
+    margin: 50px 100px 50px 100px;
+    border: 2px solid gray;
+    box-sizing: border-box;
+}
+
+#back a img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#back a{
+    font-weight: bold;
+    padding: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.main h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.main p{
+    text-align: center;
+    padding: 0 50px 10px 50px;
+}
+
+.main h2{
+    padding: 10px 0 0 50px;
+}
+
+#form{
+    padding: 0 0 10px 50px;
+}
+
+#form input{
+    margin: 10px 30px 20px 0;
+    padding: 10px;
+}
+
+#form .btn{
+    box-sizing: border-box;
+    margin: 10px 0  20px 180px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* contact */
+#contact{
+    background: rgb(73, 73, 73);
+}
+
+#contact h1{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#contact{
+    padding: 0 50px 10px 50px;
+}
+
+#contact .input{
+    margin-left: 480px;
+}
+
+#contact input{
+    margin: 10px 50px 10px 0;
+    padding: 10px;
+}
+
+#contact input{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+#contact .email{
+    margin-bottom: -10px;
+    display: flex;
+}
+
+textarea{
+    width: 300px;
+    padding: 10px;
+}
+
+#contact .btn{
+    margin: 10px 0  20px 120px;
+    padding: 10px;
+    border: transparent;
+    border-radius: 5px;
+    color: white;
+    background: #007BFF;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: flex;
+}
+
+
+/* Footer Section */
+footer{
+    color: white;
+    background-color: #272727;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us{
+    padding: 70px 0 0 110px;
+}
+
+.about-us h3{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 830px;
+    padding-bottom: 10px;
+}
+
+.about-us p{
+    text-align: center;
+    padding-right: 800px;
+}
+
+.open-hours{
+    margin: -155px 0 0 650px;
+}
+
+.open-hours h3{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 500px;
+    padding-bottom: 10px;
+}
+
+.open-hours p{
+    text-align: center;
+    padding-right: 500px;
+}
+
+.location{
+    margin: -130px 0 0 1000px;
+}
+
+.location h3{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 150px;
+    padding-bottom: 10px;
+}
+
+.location p{
+    text-align: center;
+    padding-right: 150px;
+}
+
+.cards{
+    display: flex;
+    margin-top: 20px;
+    padding-left: 70px;
+}
+
+.cards .icon1 {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 870) {
+    
+}
