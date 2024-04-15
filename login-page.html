@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="website icon" type="png" href="./icon.png">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+
+      .login-container {
+        border: 2px solid gray;
+        border-radius: 5px;
+        padding: 20px 20px 30px 0;
+        max-width: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .login-container h1 {
+        font-weight: bold;
+        font-size: 40px;
+      }
+
+      .login-container input {
+        padding: 10px;
+        border: 1px solid rgb(109, 109, 109);
+        border-radius: 4px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .login-container button {
+        background-color: #007bff;
+        color: #fff;
+        margin-left: 80px;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      .login-container button:hover {
+        background-color: #0056b3;
+      }
+
+      a {
+        display: flex;
+        text-decoration: none;
+        color: white;
+      }
+
+      p {
+        padding-left: 30px;
+        font-size: 14px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login</h1>
+      <form id="login-form" name="myForm" method="put">
+        
+        <div class="formdesign" id="email">
+            <input type="email" name="email" placeholder="Email" required /><span class="formerror"> </span>
+        </div>
+        
+        <div class="formdesign" id="pass">
+            <!-- <input type="password" placeholder="Password"> -->
+            <input type="text" name="pass" placeholder="Password" required /><span class="formerror"> </span>
+        </div>
+
+        <button type="button"><a href="index.html">Login</a></button>
+      </form>
+      <a href="Signup-Page.html"><p>Create new account? Signup</p></a>
+    </div>
+  </body>
+  
+  <!-- <script src="index.js"></script> -->
+  <script>
+    document.getElementById("login-form").addEventListener('submit', function(event){
+      event.preventDefault();
+
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('pass').value;
+
+      if (email === "" || password === "") {
+        alert("Login Successful");
+        window.location.assign('index.html');
+      } else {
+        alert("Wrong Email and Password");
+      }
+    })
+  </script>
+</html>
